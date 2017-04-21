@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AC3A70C1EAA619A0085FC6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3A70B1EAA619A0085FC6B /* AppDelegate.swift */; };
+		4AC3A70E1EAA619A0085FC6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3A70D1EAA619A0085FC6B /* ViewController.swift */; };
+		4AC3A7111EAA619A0085FC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC3A70F1EAA619A0085FC6B /* Main.storyboard */; };
+		4AC3A7131EAA619A0085FC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC3A7121EAA619A0085FC6B /* Assets.xcassets */; };
+		4AC3A7161EAA619A0085FC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC3A7141EAA619A0085FC6B /* LaunchScreen.storyboard */; };
+		4AC3A7211EAA619A0085FC6B /* Proton_DevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3A7201EAA619A0085FC6B /* Proton_DevTests.swift */; };
+		4AC3A72C1EAA619A0085FC6B /* Proton_DevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3A72B1EAA619A0085FC6B /* Proton_DevUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AC3A71D1EAA619A0085FC6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AC3A7001EAA619A0085FC6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AC3A7071EAA619A0085FC6B;
+			remoteInfo = "Proton Dev";
+		};
+		4AC3A7281EAA619A0085FC6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AC3A7001EAA619A0085FC6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AC3A7071EAA619A0085FC6B;
+			remoteInfo = "Proton Dev";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AC3A7081EAA619A0085FC6B /* Proton Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proton Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC3A70B1EAA619A0085FC6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AC3A70D1EAA619A0085FC6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AC3A7101EAA619A0085FC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AC3A7121EAA619A0085FC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AC3A7151EAA619A0085FC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AC3A7171EAA619A0085FC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AC3A71C1EAA619A0085FC6B /* Proton DevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Proton DevTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC3A7201EAA619A0085FC6B /* Proton_DevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proton_DevTests.swift; sourceTree = "<group>"; };
+		4AC3A7221EAA619A0085FC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AC3A7271EAA619A0085FC6B /* Proton DevUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Proton DevUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC3A72B1EAA619A0085FC6B /* Proton_DevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proton_DevUITests.swift; sourceTree = "<group>"; };
+		4AC3A72D1EAA619A0085FC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AC3A7051EAA619A0085FC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC3A7191EAA619A0085FC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC3A7241EAA619A0085FC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AC3A6FF1EAA619A0085FC6B = {
+			isa = PBXGroup;
+			children = (
+				4AC3A70A1EAA619A0085FC6B /* Proton Dev */,
+				4AC3A71F1EAA619A0085FC6B /* Proton DevTests */,
+				4AC3A72A1EAA619A0085FC6B /* Proton DevUITests */,
+				4AC3A7091EAA619A0085FC6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AC3A7091EAA619A0085FC6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AC3A7081EAA619A0085FC6B /* Proton Dev.app */,
+				4AC3A71C1EAA619A0085FC6B /* Proton DevTests.xctest */,
+				4AC3A7271EAA619A0085FC6B /* Proton DevUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AC3A70A1EAA619A0085FC6B /* Proton Dev */ = {
+			isa = PBXGroup;
+			children = (
+				4AC3A70B1EAA619A0085FC6B /* AppDelegate.swift */,
+				4AC3A70D1EAA619A0085FC6B /* ViewController.swift */,
+				4AC3A70F1EAA619A0085FC6B /* Main.storyboard */,
+				4AC3A7121EAA619A0085FC6B /* Assets.xcassets */,
+				4AC3A7141EAA619A0085FC6B /* LaunchScreen.storyboard */,
+				4AC3A7171EAA619A0085FC6B /* Info.plist */,
+			);
+			path = "Proton Dev";
+			sourceTree = "<group>";
+		};
+		4AC3A71F1EAA619A0085FC6B /* Proton DevTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AC3A7201EAA619A0085FC6B /* Proton_DevTests.swift */,
+				4AC3A7221EAA619A0085FC6B /* Info.plist */,
+			);
+			path = "Proton DevTests";
+			sourceTree = "<group>";
+		};
+		4AC3A72A1EAA619A0085FC6B /* Proton DevUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AC3A72B1EAA619A0085FC6B /* Proton_DevUITests.swift */,
+				4AC3A72D1EAA619A0085FC6B /* Info.plist */,
+			);
+			path = "Proton DevUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AC3A7071EAA619A0085FC6B /* Proton Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AC3A7301EAA619A0085FC6B /* Build configuration list for PBXNativeTarget "Proton Dev" */;
+			buildPhases = (
+				4AC3A7041EAA619A0085FC6B /* Sources */,
+				4AC3A7051EAA619A0085FC6B /* Frameworks */,
+				4AC3A7061EAA619A0085FC6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Proton Dev";
+			productName = "Proton Dev";
+			productReference = 4AC3A7081EAA619A0085FC6B /* Proton Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AC3A71B1EAA619A0085FC6B /* Proton DevTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AC3A7331EAA619A0085FC6B /* Build configuration list for PBXNativeTarget "Proton DevTests" */;
+			buildPhases = (
+				4AC3A7181EAA619A0085FC6B /* Sources */,
+				4AC3A7191EAA619A0085FC6B /* Frameworks */,
+				4AC3A71A1EAA619A0085FC6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AC3A71E1EAA619A0085FC6B /* PBXTargetDependency */,
+			);
+			name = "Proton DevTests";
+			productName = "Proton DevTests";
+			productReference = 4AC3A71C1EAA619A0085FC6B /* Proton DevTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AC3A7261EAA619A0085FC6B /* Proton DevUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AC3A7361EAA619A0085FC6B /* Build configuration list for PBXNativeTarget "Proton DevUITests" */;
+			buildPhases = (
+				4AC3A7231EAA619A0085FC6B /* Sources */,
+				4AC3A7241EAA619A0085FC6B /* Frameworks */,
+				4AC3A7251EAA619A0085FC6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AC3A7291EAA619A0085FC6B /* PBXTargetDependency */,
+			);
+			name = "Proton DevUITests";
+			productName = "Proton DevUITests";
+			productReference = 4AC3A7271EAA619A0085FC6B /* Proton DevUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AC3A7001EAA619A0085FC6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kirk Roerig";
+				TargetAttributes = {
+					4AC3A7071EAA619A0085FC6B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 8C2E6QPTC9;
+						ProvisioningStyle = Automatic;
+					};
+					4AC3A71B1EAA619A0085FC6B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 8C2E6QPTC9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4AC3A7071EAA619A0085FC6B;
+					};
+					4AC3A7261EAA619A0085FC6B = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 8C2E6QPTC9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4AC3A7071EAA619A0085FC6B;
+					};
+				};
+			};
+			buildConfigurationList = 4AC3A7031EAA619A0085FC6B /* Build configuration list for PBXProject "Proton Dev" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AC3A6FF1EAA619A0085FC6B;
+			productRefGroup = 4AC3A7091EAA619A0085FC6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AC3A7071EAA619A0085FC6B /* Proton Dev */,
+				4AC3A71B1EAA619A0085FC6B /* Proton DevTests */,
+				4AC3A7261EAA619A0085FC6B /* Proton DevUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AC3A7061EAA619A0085FC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC3A7161EAA619A0085FC6B /* LaunchScreen.storyboard in Resources */,
+				4AC3A7131EAA619A0085FC6B /* Assets.xcassets in Resources */,
+				4AC3A7111EAA619A0085FC6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC3A71A1EAA619A0085FC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC3A7251EAA619A0085FC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AC3A7041EAA619A0085FC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC3A70E1EAA619A0085FC6B /* ViewController.swift in Sources */,
+				4AC3A70C1EAA619A0085FC6B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC3A7181EAA619A0085FC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC3A7211EAA619A0085FC6B /* Proton_DevTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AC3A7231EAA619A0085FC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AC3A72C1EAA619A0085FC6B /* Proton_DevUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AC3A71E1EAA619A0085FC6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AC3A7071EAA619A0085FC6B /* Proton Dev */;
+			targetProxy = 4AC3A71D1EAA619A0085FC6B /* PBXContainerItemProxy */;
+		};
+		4AC3A7291EAA619A0085FC6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AC3A7071EAA619A0085FC6B /* Proton Dev */;
+			targetProxy = 4AC3A7281EAA619A0085FC6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AC3A70F1EAA619A0085FC6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AC3A7101EAA619A0085FC6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AC3A7141EAA619A0085FC6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AC3A7151EAA619A0085FC6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AC3A72E1EAA619A0085FC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AC3A72F1EAA619A0085FC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AC3A7311EAA619A0085FC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8C2E6QPTC9;
+				INFOPLIST_FILE = "Proton Dev/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Proton-Dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4AC3A7321EAA619A0085FC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8C2E6QPTC9;
+				INFOPLIST_FILE = "Proton Dev/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Proton-Dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4AC3A7341EAA619A0085FC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8C2E6QPTC9;
+				INFOPLIST_FILE = "Proton DevTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Proton-DevTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Proton Dev.app/Proton Dev";
+			};
+			name = Debug;
+		};
+		4AC3A7351EAA619A0085FC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8C2E6QPTC9;
+				INFOPLIST_FILE = "Proton DevTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Proton-DevTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Proton Dev.app/Proton Dev";
+			};
+			name = Release;
+		};
+		4AC3A7371EAA619A0085FC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8C2E6QPTC9;
+				INFOPLIST_FILE = "Proton DevUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Proton-DevUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Proton Dev";
+			};
+			name = Debug;
+		};
+		4AC3A7381EAA619A0085FC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8C2E6QPTC9;
+				INFOPLIST_FILE = "Proton DevUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Proton-DevUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Proton Dev";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AC3A7031EAA619A0085FC6B /* Build configuration list for PBXProject "Proton Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC3A72E1EAA619A0085FC6B /* Debug */,
+				4AC3A72F1EAA619A0085FC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AC3A7301EAA619A0085FC6B /* Build configuration list for PBXNativeTarget "Proton Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC3A7311EAA619A0085FC6B /* Debug */,
+				4AC3A7321EAA619A0085FC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4AC3A7331EAA619A0085FC6B /* Build configuration list for PBXNativeTarget "Proton DevTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC3A7341EAA619A0085FC6B /* Debug */,
+				4AC3A7351EAA619A0085FC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4AC3A7361EAA619A0085FC6B /* Build configuration list for PBXNativeTarget "Proton DevUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AC3A7371EAA619A0085FC6B /* Debug */,
+				4AC3A7381EAA619A0085FC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AC3A7001EAA619A0085FC6B /* Project object */;
+}
