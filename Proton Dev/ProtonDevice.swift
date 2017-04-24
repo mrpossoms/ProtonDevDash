@@ -38,7 +38,7 @@ let SVC_CHAR_MAP = [
 protocol ProtonDeviceDelegate {
     func discovered(proton: CBPeripheral);
     func connected(toProton: CBPeripheral, withError: Error?);
-//    func disconnected();
+    func disconnected(error: Error?);
     func accelerationEvent(acceleration: Vec3);
 }
 
@@ -74,6 +74,17 @@ class ProtonDevice: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         cenMan?.connect(myProton!, options: nil);
     }
     
+    public func disconnect()
+    {
+        if myProton != nil {
+            cenMan?.cancelPeripheralConnection(myProton!);
+        }
+        
+        discoveredProtons?.removeAll();
+        myProton = nil;
+        interogatedServices = 0;
+    }
+    
     public func sendCommand(cmdByte: UInt8)
     {
         myProton?.writeValue(Data(bytes: [cmdByte]), for: cmdsChar!, type: CBCharacteristicWriteType.withResponse);
@@ -104,6 +115,15 @@ class ProtonDevice: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         peripheral.discoverServices(SVC_UUIDS);
+    }
+    
+    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+        disconnect(); // cleanup
+        delegate?.disconnected(error: error);
+    }
+    
+    func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
+        delegate?.disconnected(error: error);
     }
     
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
@@ -145,7 +165,7 @@ class ProtonDevice: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             let INT_G : Float = 16.0;
             var vec : [Int16] = [0,0,0];
 
-            vec.withUnsafeMutableBufferPointer({ (ptr: inout UnsafeMutableBufferPointer<Int16>) in
+            _ = vec.withUnsafeMutableBufferPointer({ (ptr: inout UnsafeMutableBufferPointer<Int16>) in
                 characteristic.value?.copyBytes(to: ptr);
             });            
             

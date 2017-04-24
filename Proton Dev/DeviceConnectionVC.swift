@@ -19,16 +19,16 @@ class DeviceConnectionVC: UIViewController, ProtonDeviceDelegate {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder);
         protonDev = ProtonDevice.SharedInstance;
-        protonDev?.delegate = self;
     }
     
     override func viewDidLoad() {
         super.viewDidLoad();
-        statusLabel.text = "Searching...";
     }
     
     override func viewWillAppear(_ animated: Bool) {
         protonDev?.delegate = self;
+        protonDev?.startScan();
+        statusLabel.text = "Searching...";
     }
     
     func discovered(proton: CBPeripheral) {
@@ -36,6 +36,7 @@ class DeviceConnectionVC: UIViewController, ProtonDeviceDelegate {
         protonDev?.connect(toProton: proton);
     }
     
+    func disconnected(error: Error?) { }
     
     func connected(toProton: CBPeripheral, withError: Error?) {
         if withError == nil {
