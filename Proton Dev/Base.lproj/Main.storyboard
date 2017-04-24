@@ -1,26 +1,130 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LaJ-lO-eor">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="6tL-ez-HXx">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="LaJ-lO-eor" customClass="ViewController" customModule="Proton_Dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RC2-AX-vZy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WQc-qD-NQY" kind="relationship" relationship="rootViewController" id="7P3-78-fdg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bag-LI-CAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-290" y="187"/>
+        </scene>
+        <!--Device ConnectionVC-->
+        <scene sceneID="hap-Lh-FdY">
+            <objects>
+                <viewController id="WQc-qD-NQY" customClass="DeviceConnectionVC" customModule="Proton_Dev" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="8ul-Bd-95V"/>
+                        <viewControllerLayoutGuide type="bottom" id="eva-hc-JWd"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="fQN-9a-Fhz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[STATUS]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqw-Y5-6fi">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tqw-Y5-6fi" firstAttribute="leading" secondItem="fQN-9a-Fhz" secondAttribute="leadingMargin" id="0vv-Ik-gcG"/>
+                            <constraint firstItem="tqw-Y5-6fi" firstAttribute="centerY" secondItem="fQN-9a-Fhz" secondAttribute="centerY" id="2Dn-XR-hr2"/>
+                            <constraint firstItem="tqw-Y5-6fi" firstAttribute="trailing" secondItem="fQN-9a-Fhz" secondAttribute="trailingMargin" id="W91-aq-lrH"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tsp-ld-cFw"/>
+                    <connections>
+                        <outlet property="statusLabel" destination="tqw-Y5-6fi" id="pcZ-rY-bbN"/>
+                        <segue destination="zoK-0b-qtu" kind="show" identifier="ProtonDash" id="ryO-ai-DBF"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFl-8M-zet" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="497" y="187"/>
+        </scene>
+        <!--Proton DashVC-->
+        <scene sceneID="VVS-IV-KmA">
+            <objects>
+                <viewController id="zoK-0b-qtu" customClass="ProtonDashVC" customModule="Proton_Dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="chS-er-ksZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="d4Y-fL-TE3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="12W-Cy-cpT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuE-Iw-3d6">
+                                <rect key="frame" x="16" y="72" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Se-K0-YH5">
+                                <rect key="frame" x="0.0" y="579" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Normal" id="3Xp-EW-mHQ">
+                                        <connections>
+                                            <action selector="setModeNormal:" destination="zoK-0b-qtu" id="TJh-p2-N70"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Poll" id="YiI-J7-GMg">
+                                        <connections>
+                                            <action selector="setModePoll:" destination="zoK-0b-qtu" id="BAE-bH-5Dq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lbg-tL-kc5" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="101" width="343" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="NpS-iA-h9O"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uuE-Iw-3d6" firstAttribute="top" secondItem="chS-er-ksZ" secondAttribute="bottom" constant="8" id="5P8-6u-xUD"/>
+                            <constraint firstItem="d4Y-fL-TE3" firstAttribute="top" secondItem="9Se-K0-YH5" secondAttribute="bottom" id="DeB-EJ-YDL"/>
+                            <constraint firstItem="Lbg-tL-kc5" firstAttribute="top" secondItem="uuE-Iw-3d6" secondAttribute="bottom" constant="8" id="Fnf-Ci-bwn"/>
+                            <constraint firstItem="Lbg-tL-kc5" firstAttribute="trailing" secondItem="12W-Cy-cpT" secondAttribute="trailingMargin" id="Xf6-Y8-bIB"/>
+                            <constraint firstItem="Lbg-tL-kc5" firstAttribute="leading" secondItem="12W-Cy-cpT" secondAttribute="leadingMargin" id="aJx-JZ-zC0"/>
+                            <constraint firstItem="uuE-Iw-3d6" firstAttribute="trailing" secondItem="12W-Cy-cpT" secondAttribute="trailingMargin" id="myO-Rb-ke4"/>
+                            <constraint firstItem="9Se-K0-YH5" firstAttribute="leading" secondItem="12W-Cy-cpT" secondAttribute="leading" id="oKb-zF-CNJ"/>
+                            <constraint firstAttribute="trailing" secondItem="9Se-K0-YH5" secondAttribute="trailing" id="tgc-LF-vOW"/>
+                            <constraint firstItem="uuE-Iw-3d6" firstAttribute="leading" secondItem="12W-Cy-cpT" secondAttribute="leadingMargin" id="zJQ-9D-VsL"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="accChart" destination="Lbg-tL-kc5" id="f1p-C0-6ke"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKV-d7-Wu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1288.8" y="186.65667166416793"/>
         </scene>
     </scenes>
 </document>

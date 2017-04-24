@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F71083B3EF90F9F0FD4E54 /* Pods_Proton_DevUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEE5EFE995F5D82F4A3DBE8 /* Pods_Proton_DevUITests.framework */; };
+		13A21A79BAB8F8A999D967B5 /* Pods_Proton_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA28BD23267136480FA5084F /* Pods_Proton_Dev.framework */; };
+		4A1AD81A1EAE295200CEB263 /* DeviceConnectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1AD8191EAE295200CEB263 /* DeviceConnectionVC.swift */; };
+		4A2365161EAE55DC00E87435 /* ProtonDashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2365151EAE55DC00E87435 /* ProtonDashVC.swift */; };
 		4AC3A70C1EAA619A0085FC6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3A70B1EAA619A0085FC6B /* AppDelegate.swift */; };
 		4AC3A70E1EAA619A0085FC6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3A70D1EAA619A0085FC6B /* ViewController.swift */; };
 		4AC3A7111EAA619A0085FC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC3A70F1EAA619A0085FC6B /* Main.storyboard */; };
@@ -14,6 +18,8 @@
 		4AC3A7161EAA619A0085FC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC3A7141EAA619A0085FC6B /* LaunchScreen.storyboard */; };
 		4AC3A7211EAA619A0085FC6B /* Proton_DevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3A7201EAA619A0085FC6B /* Proton_DevTests.swift */; };
 		4AC3A72C1EAA619A0085FC6B /* Proton_DevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3A72B1EAA619A0085FC6B /* Proton_DevUITests.swift */; };
+		4AC3A73A1EAA68500085FC6B /* ProtonDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3A7391EAA68500085FC6B /* ProtonDevice.swift */; };
+		C9CC0E23C85550C1DE8CFD23 /* Pods_Proton_DevTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47729E6525B950482B067256 /* Pods_Proton_DevTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02990388A7626E84824BBF2F /* Pods-Proton DevTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proton DevTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Proton DevTests/Pods-Proton DevTests.release.xcconfig"; sourceTree = "<group>"; };
+		452F0D7AC111D2724C6E9E5C /* Pods-Proton DevUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proton DevUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proton DevUITests/Pods-Proton DevUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		47729E6525B950482B067256 /* Pods_Proton_DevTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proton_DevTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A1AD8191EAE295200CEB263 /* DeviceConnectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceConnectionVC.swift; sourceTree = "<group>"; };
+		4A2365151EAE55DC00E87435 /* ProtonDashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtonDashVC.swift; sourceTree = "<group>"; };
 		4AC3A7081EAA619A0085FC6B /* Proton Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proton Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC3A70B1EAA619A0085FC6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC3A70D1EAA619A0085FC6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,13 @@
 		4AC3A7271EAA619A0085FC6B /* Proton DevUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Proton DevUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC3A72B1EAA619A0085FC6B /* Proton_DevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proton_DevUITests.swift; sourceTree = "<group>"; };
 		4AC3A72D1EAA619A0085FC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AC3A7391EAA68500085FC6B /* ProtonDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtonDevice.swift; sourceTree = "<group>"; };
+		6D9EECC71752C93F8D100FAF /* Pods-Proton Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proton Dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proton Dev/Pods-Proton Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		7AEE5EFE995F5D82F4A3DBE8 /* Pods_Proton_DevUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proton_DevUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DCD9B8C10AF31E346248FC7 /* Pods-Proton DevTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proton DevTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proton DevTests/Pods-Proton DevTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA28BD23267136480FA5084F /* Pods_Proton_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Proton_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB335AA3629BBC8A7EFAE367 /* Pods-Proton Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proton Dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-Proton Dev/Pods-Proton Dev.release.xcconfig"; sourceTree = "<group>"; };
+		F47AA821C2F5D60E74A8284A /* Pods-Proton DevUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proton DevUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Proton DevUITests/Pods-Proton DevUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13A21A79BAB8F8A999D967B5 /* Pods_Proton_Dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9CC0E23C85550C1DE8CFD23 /* Pods_Proton_DevTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F71083B3EF90F9F0FD4E54 /* Pods_Proton_DevUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +102,8 @@
 				4AC3A71F1EAA619A0085FC6B /* Proton DevTests */,
 				4AC3A72A1EAA619A0085FC6B /* Proton DevUITests */,
 				4AC3A7091EAA619A0085FC6B /* Products */,
+				C203FD12A33E29948299CCFC /* Pods */,
+				93E585131B71EABC5EE499FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +126,9 @@
 				4AC3A7121EAA619A0085FC6B /* Assets.xcassets */,
 				4AC3A7141EAA619A0085FC6B /* LaunchScreen.storyboard */,
 				4AC3A7171EAA619A0085FC6B /* Info.plist */,
+				4AC3A7391EAA68500085FC6B /* ProtonDevice.swift */,
+				4A1AD8191EAE295200CEB263 /* DeviceConnectionVC.swift */,
+				4A2365151EAE55DC00E87435 /* ProtonDashVC.swift */,
 			);
 			path = "Proton Dev";
 			sourceTree = "<group>";
@@ -125,6 +151,29 @@
 			path = "Proton DevUITests";
 			sourceTree = "<group>";
 		};
+		93E585131B71EABC5EE499FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA28BD23267136480FA5084F /* Pods_Proton_Dev.framework */,
+				47729E6525B950482B067256 /* Pods_Proton_DevTests.framework */,
+				7AEE5EFE995F5D82F4A3DBE8 /* Pods_Proton_DevUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C203FD12A33E29948299CCFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D9EECC71752C93F8D100FAF /* Pods-Proton Dev.debug.xcconfig */,
+				DB335AA3629BBC8A7EFAE367 /* Pods-Proton Dev.release.xcconfig */,
+				8DCD9B8C10AF31E346248FC7 /* Pods-Proton DevTests.debug.xcconfig */,
+				02990388A7626E84824BBF2F /* Pods-Proton DevTests.release.xcconfig */,
+				452F0D7AC111D2724C6E9E5C /* Pods-Proton DevUITests.debug.xcconfig */,
+				F47AA821C2F5D60E74A8284A /* Pods-Proton DevUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AC3A7301EAA619A0085FC6B /* Build configuration list for PBXNativeTarget "Proton Dev" */;
 			buildPhases = (
+				163D3109CD2DD3083B8F6426 /* [CP] Check Pods Manifest.lock */,
 				4AC3A7041EAA619A0085FC6B /* Sources */,
 				4AC3A7051EAA619A0085FC6B /* Frameworks */,
 				4AC3A7061EAA619A0085FC6B /* Resources */,
+				41259A210AFA96B7ABDD2323 /* [CP] Embed Pods Frameworks */,
+				FC00BB75E3E3C93877556B68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AC3A7331EAA619A0085FC6B /* Build configuration list for PBXNativeTarget "Proton DevTests" */;
 			buildPhases = (
+				5C0B388D95659BCDCD7EEB2E /* [CP] Check Pods Manifest.lock */,
 				4AC3A7181EAA619A0085FC6B /* Sources */,
 				4AC3A7191EAA619A0085FC6B /* Frameworks */,
 				4AC3A71A1EAA619A0085FC6B /* Resources */,
+				6E0B4DFB9152DE6091B0FC63 /* [CP] Embed Pods Frameworks */,
+				15A70C49FFFBEEC8681F3CD3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AC3A7361EAA619A0085FC6B /* Build configuration list for PBXNativeTarget "Proton DevUITests" */;
 			buildPhases = (
+				07D69EC833279E0F19BFE6E7 /* [CP] Check Pods Manifest.lock */,
 				4AC3A7231EAA619A0085FC6B /* Sources */,
 				4AC3A7241EAA619A0085FC6B /* Frameworks */,
 				4AC3A7251EAA619A0085FC6B /* Resources */,
+				B2C407A45191D20172E881B7 /* [CP] Embed Pods Frameworks */,
+				CCB3D1B38813AE373A748F92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +315,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07D69EC833279E0F19BFE6E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		15A70C49FFFBEEC8681F3CD3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Proton DevTests/Pods-Proton DevTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		163D3109CD2DD3083B8F6426 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		41259A210AFA96B7ABDD2323 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Proton Dev/Pods-Proton Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C0B388D95659BCDCD7EEB2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E0B4DFB9152DE6091B0FC63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Proton DevTests/Pods-Proton DevTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2C407A45191D20172E881B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Proton DevUITests/Pods-Proton DevUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB3D1B38813AE373A748F92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Proton DevUITests/Pods-Proton DevUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC00BB75E3E3C93877556B68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Proton Dev/Pods-Proton Dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4AC3A7041EAA619A0085FC6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2365161EAE55DC00E87435 /* ProtonDashVC.swift in Sources */,
+				4A1AD81A1EAE295200CEB263 /* DeviceConnectionVC.swift in Sources */,
 				4AC3A70E1EAA619A0085FC6B /* ViewController.swift in Sources */,
 				4AC3A70C1EAA619A0085FC6B /* AppDelegate.swift in Sources */,
+				4AC3A73A1EAA68500085FC6B /* ProtonDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +614,7 @@
 		};
 		4AC3A7311EAA619A0085FC6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D9EECC71752C93F8D100FAF /* Pods-Proton Dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8C2E6QPTC9;
@@ -428,6 +628,7 @@
 		};
 		4AC3A7321EAA619A0085FC6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB335AA3629BBC8A7EFAE367 /* Pods-Proton Dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8C2E6QPTC9;
@@ -441,6 +642,7 @@
 		};
 		4AC3A7341EAA619A0085FC6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DCD9B8C10AF31E346248FC7 /* Pods-Proton DevTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +658,7 @@
 		};
 		4AC3A7351EAA619A0085FC6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02990388A7626E84824BBF2F /* Pods-Proton DevTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +674,7 @@
 		};
 		4AC3A7371EAA619A0085FC6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 452F0D7AC111D2724C6E9E5C /* Pods-Proton DevUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8C2E6QPTC9;
@@ -485,6 +689,7 @@
 		};
 		4AC3A7381EAA619A0085FC6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F47AA821C2F5D60E74A8284A /* Pods-Proton DevUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8C2E6QPTC9;
@@ -516,6 +721,7 @@
 				4AC3A7321EAA619A0085FC6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AC3A7331EAA619A0085FC6B /* Build configuration list for PBXNativeTarget "Proton DevTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +730,7 @@
 				4AC3A7351EAA619A0085FC6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AC3A7361EAA619A0085FC6B /* Build configuration list for PBXNativeTarget "Proton DevUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +739,7 @@
 				4AC3A7381EAA619A0085FC6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
