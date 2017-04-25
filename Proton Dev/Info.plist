@@ -33,6 +33,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>For acceleration deceleration data recording</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>To recieve shock alerts</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

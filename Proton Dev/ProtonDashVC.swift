@@ -28,6 +28,9 @@ class ProtonDashVC: UIViewController, ProtonDeviceDelegate, ChartViewDelegate, C
         
         locMan = CLLocationManager();
         locMan?.delegate = self;
+        locMan?.allowsBackgroundLocationUpdates = true;
+        locMan?.desiredAccuracy = 1;
+        locMan?.requestAlwaysAuthorization();
     }
     
     
@@ -40,6 +43,10 @@ class ProtonDashVC: UIViewController, ProtonDeviceDelegate, ChartViewDelegate, C
         accYData.drawCirclesEnabled = false;
         accZData.setColor(NSUIColor.blue);
         accZData.drawCirclesEnabled = false;
+        speedData.drawCirclesEnabled = false;
+        speedData.setColor(NSUIColor.magenta);
+        accData.drawCirclesEnabled = false;
+        accData.setColor(NSUIColor.purple);
         
         accXData.clear();
         accYData.clear();
@@ -51,7 +58,6 @@ class ProtonDashVC: UIViewController, ProtonDeviceDelegate, ChartViewDelegate, C
     
     @IBAction func setModeNormal(_ sender: Any) {
         ProtonDevice.SharedInstance.sendCommand(cmdByte: 0);
-        locMan?.stopUpdatingHeading();
         locMan?.stopUpdatingLocation();
         
         
@@ -79,7 +85,6 @@ class ProtonDashVC: UIViewController, ProtonDeviceDelegate, ChartViewDelegate, C
     
     @IBAction func setModePoll(_ sender: Any) {
         ProtonDevice.SharedInstance.sendCommand(cmdByte: 1);
-        locMan?.startUpdatingHeading();
         locMan?.startUpdatingLocation();
         
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
@@ -98,7 +103,6 @@ class ProtonDashVC: UIViewController, ProtonDeviceDelegate, ChartViewDelegate, C
     
     override func viewWillDisappear(_ animated: Bool) {
         ProtonDevice.SharedInstance.disconnect();
-        locMan?.stopUpdatingHeading();
         locMan?.stopUpdatingLocation();
     }
     
@@ -134,10 +138,16 @@ class ProtonDashVC: UIViewController, ProtonDeviceDelegate, ChartViewDelegate, C
         
         if accZData.entryCount > 250 {
             _ = accZData.removeFirst();
+            
+            while speedData.entryCount > 0 && speedData.entryForIndex(0)!.x < accXData.entryForIndex(0)!.x {
+                _ = speedData.removeFirst();
+                _ = accData.removeFirst();
+            }
+            
         }
         
-        if accXData.entryCount > 0 && speedData.entryCount > 0 {
-            accChart.data = LineChartData(dataSets: [accXData, accYData, accZData, speedData]);
+        if accXData.entryCount > 0 && accData.entryCount > 0 {
+            accChart.data = LineChartData(dataSets: [accXData, accYData, accZData, speedData, accData]);
         }
         
         if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
@@ -161,10 +171,6 @@ class ProtonDashVC: UIViewController, ProtonDeviceDelegate, ChartViewDelegate, C
     //   | |__/ _ \/ _/ _` |  _| / _ \ ' \| |\/| / _` | ' \ _  | |) | / _` |  _|_
     //   |____\___/\__\__,_|\__|_\___/_||_|_|  |_\__,_|_||_(_) |___/|_\__, |\__(_)
     //                                                                |___/
-    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        print(newHeading);
-    }
-    
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let interval = NSDate().timeIntervalSince(startTime);
@@ -177,6 +183,7 @@ class ProtonDashVC: UIViewController, ProtonDeviceDelegate, ChartViewDelegate, C
             let lastSpeed = speedData.entryForIndex(speedDataLen - 2)!.y;
             let speed = speedData.entryForIndex(speedDataLen - 1)!.y;
             let acc = speed - lastSpeed;
+            _ = accData.addEntry(ChartDataEntry(x: interval, y: acc));
             
             if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
                 
@@ -191,12 +198,6 @@ class ProtonDashVC: UIViewController, ProtonDeviceDelegate, ChartViewDelegate, C
                 }
                 catch {/* error handling here */}
             }
-            
-            _ = accData.addEntry(ChartDataEntry(x: interval, y: acc));
-        }
-        
-        while speedData.entryCount > 250 {
-            _ = speedData.removeFirst();
         }
     }
 }
