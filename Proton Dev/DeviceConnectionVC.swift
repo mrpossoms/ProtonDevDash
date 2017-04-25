@@ -10,9 +10,10 @@ import Foundation
 import UIKit
 import CoreBluetooth
 
+
 class DeviceConnectionVC: UIViewController, ProtonDeviceDelegate {
     var protonDev : ProtonDevice?;
-    
+  
     @IBOutlet weak var statusLabel: UILabel!
     
 
@@ -31,6 +32,11 @@ class DeviceConnectionVC: UIViewController, ProtonDeviceDelegate {
         statusLabel.text = "Searching...";
     }
     
+//    ___         _              ___            ___  _      _
+//   | _ \_ _ ___| |_ ___ _ _   |   \ _____ __ |   \| |__ _| |_
+//   |  _/ '_/ _ \  _/ _ \ ' \  | |) / -_) V / | |) | / _` |  _|_
+//   |_| |_| \___/\__\___/_||_| |___/\___|\_/  |___/|_\__, |\__(_)
+//                                                    |___/
     func discovered(proton: CBPeripheral) {
         statusLabel.text = "Connecting...";
         protonDev?.connect(toProton: proton);
@@ -52,5 +58,4 @@ class DeviceConnectionVC: UIViewController, ProtonDeviceDelegate {
     func accelerationEvent(acceleration: Vec3) {
         print(acceleration);
     }
-    
 }
